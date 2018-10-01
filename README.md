@@ -27,7 +27,7 @@ This project was created as a part of the Treehouse Full Stack JavaScript Techde
 * Download project files by running ```git clone https://github.com/LeeVaughn/course-rating-api```
 * Navigate to the project folder
 * Install dependencies with ```npm install```
-* Start application by running ```npm start``` (application runs on localhost:3000)
+* Start application by running ```npm start``` (application runs on localhost:5000)
 
 ## Built With
 
