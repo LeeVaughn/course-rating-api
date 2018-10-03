@@ -1,6 +1,4 @@
 const mongoose = require("mongoose");
-const User = require("./user");
-const Review = require("./review");
 const Schema = mongoose.Schema;
 
 const CourseSchema = new Schema({
