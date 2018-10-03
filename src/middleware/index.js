@@ -5,6 +5,7 @@ function authenticateUser(req, res, next) {
   const credentials = auth(req);
 
   if (credentials) {
+    // credentials lists the key as name but it actually reflects the user's email address
     User.authenticate(credentials.name, credentials.pass, (error, user) => {
       if (error) {
         const err = new Error("Unable to authenticate credentials");
