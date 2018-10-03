@@ -28,16 +28,22 @@ This project was created as a part of the Treehouse Full Stack JavaScript Techde
 * Navigate to the project folder
 * Install dependencies with ```npm install```
 * Start application by running ```npm start``` (application runs on localhost:5000)
+* Seed data can be found in the seed-data directory
+* Premade Postman requests for testing the application can be found in the CourseAPI.postman_collection.json file located in the root directory
 
 ## Built With
 
 * [Node.js](https://nodejs.org/en/)
 * [Express](https://github.com/LeeVaughn/twitter-interface)
-* [mongoDB](https://www.mongodb.com/)
+* [MongoDB](https://www.mongodb.com/)
 
 ## Dependencies
 
-* coming soon
+* [basic-auth](https://www.npmjs.com/package/basic-auth) Generic basic auth Authorization header field parser for whatever
+* [bcrypt](https://www.npmjs.com/package/bcrypt) Lib to help you hash passwords
+* [body-parser](https://www.npmjs.com/package/body-parser) Node.js body parsing middleware
+* [mongoose](https://www.npmjs.com/package/mongoose) elegant MongoDB object modeling for Node.js
+* [morgan](https://www.npmjs.com/package/morgan) HTTP request logger middleware for Node.js
 
 ## Links
 
