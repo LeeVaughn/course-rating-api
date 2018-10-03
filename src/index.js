@@ -19,10 +19,8 @@ app.use(morgan("dev"));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-// connection string param contains protocal to talk to mongoDB database, default port for mongoDB, then database name)
-mongoose.connect("mongodb://localhost:27017/course-api");
-
-// monitors state of request throught connection object
+// connects to mongoDB
+mongoose.connect("mongodb://localhost:27017/course-api", { useNewUrlParser: true });
 const db = mongoose.connection;
 
 // mongo error
