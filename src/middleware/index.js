@@ -14,11 +14,11 @@ function authenticateUser(req, res, next) {
       req.user = user;
       next();
     });
-  } else (
+  } else {
     const err = new Error("Please enter your credentials");
     err.status = 401;
     next(err);
-  )
+  }
 }
 
 module.exports.authenticateUser = authenticateUser;
