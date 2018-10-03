@@ -5,7 +5,7 @@ const express = require("express");
 const morgan = require("morgan");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
-const routes = require("./routes/routes");
+const routes = require("./routes/index");
 
 const app = express();
 
