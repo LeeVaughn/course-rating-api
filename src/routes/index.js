@@ -95,9 +95,21 @@ router.post("/courses/:id/reviews", mid.authenticateUser, (req, res, next) => {
     if (err) {
       next(err);
     }
-    res.status(201);
-    res.location("/courses/" + req.params.id);
-    res.send();
+    Course.findById(req.params.id, (err, course) => {
+      if (err) {
+        next(err);
+      } else {
+        course.reviews.push(review._id);
+        course.save((err, course) => {
+          if (err) {
+            next(err);
+          }
+        });
+        res.status(201);
+        res.location("/courses/" + req.params.id);
+        res.send();
+      }
+    });
   });
 });
 
