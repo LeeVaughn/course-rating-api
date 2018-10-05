@@ -1,4 +1,4 @@
-# Course Rating API (work in progress)
+# Course Rating API
 
 A back end for a course rating application which allows the user to create, edit and rate courses.
 
