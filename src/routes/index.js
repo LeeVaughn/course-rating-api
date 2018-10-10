@@ -5,7 +5,7 @@ const router = express.Router();
 const mid = require("../middleware");
 const User = require("../models/user");
 const Review = require("../models/review");
-const Course = require("../models/Course");
+const Course = require("../models/course");
 
 // GET /api/users
 // returns the currently authenticated user
