@@ -87,7 +87,7 @@ router.put("/courses/:id", mid.authenticateUser, (req, res, next) => {
 });
 
 // POST /api/courses/:courseId/reviews
-// creates a new review for specificed course id
+// creates a new review for specified course id
 router.post("/courses/:id/reviews", mid.authenticateUser, (req, res, next) => {
   const review = new Review(req.body);
 
